@@ -112,8 +112,7 @@ export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-export GOOGLE_APPLICATION_CREDENTIALS='/Users/henrydesroches/.config/gcloud/application_default_credentials.json'
-
+# kill hanging processes by port number
 function killport {
     echo '🚨 Killing all processes at port' $1
     lsof -ti tcp:$1 | xargs kill
@@ -121,12 +120,3 @@ function killport {
 
 # spaceship
 source "/opt/homebrew/opt/spaceship/spaceship.zsh"
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/henrydesroches/Downloads/google-cloud-sdk 2/path.zsh.inc' ]; then . '/Users/henrydesroches/Downloads/google-cloud-sdk 2/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/henrydesroches/Downloads/google-cloud-sdk 2/completion.zsh.inc' ]; then . '/Users/henrydesroches/Downloads/google-cloud-sdk 2/completion.zsh.inc'; fi
-function killport {
-    echo '🚨 Killing all processes at port' 
-    lsof -ti tcp: | xargs kill
-}
