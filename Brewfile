@@ -5,6 +5,8 @@ cask "1password" # you already know what it is
 cask "nordvpn" # don’t surf without one baby
 cask "obsidian" # notetaking and mind-mapping
 cask "rectangle" # window management, spiritual successor to Spectacle
+cask "the-unarchiver" # decompress RAR files etc
+
 
 # design & development
 cask "visual-studio-code" # IDE
