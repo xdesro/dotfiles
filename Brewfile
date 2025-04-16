@@ -13,6 +13,7 @@ cask "visual-studio-code" # IDE
 cask "hyper" # terminal (iterm is probably better, i’ve just used this one for a while)
 brew "spaceship" # tidy zsh prompt
 brew "node" # secret
+cask "oven-sh/bun/bun" # bun
 brew "gh" # github CLI
 cask "postman" # API testing etc
 tap "homebrew/cask-fonts" # tap the ligature’d version of Inconsolata
